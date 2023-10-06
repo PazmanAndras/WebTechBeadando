@@ -1,4 +1,37 @@
-body{
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
 
-    background-color: aqua;
+main {
+  height: 100%;
+  width: 100%;
+}
+
+section {
+  font-family: sans-serif;
+  font-size: 12ch;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-child(1) {
+  background: orange;
+  color: white;
+}
+
+section:nth-child(2) {
+  background: cyan;
+  color: white;
+}
+
+.img1{
+
+    position: relative;
+
 }
