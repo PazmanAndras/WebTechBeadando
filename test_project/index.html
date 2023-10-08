@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <form id="myForm">
+        <label for="name">Név:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="location">Lakhely:</label>
+        <input type="text" id="location" name="location"><br><br>
+
+        <label for="birthdate">Születési dátum:</label>
+        <input type="date" id="birthdate" name="birthdate"><br><br>
+
+        <label for="gender">Nem:</label>
+        <input type="checkbox" id="gender" name="gender"><br><br>
+
+        <label for="yesno">Igen/Nem:</label>
+        <input type="radio" id="yes" name="yesno" value="Igen">Igen
+        <input type="radio" id="no" name="yesno" value="Nem">Nem<br><br>
+
+        <input type="button" value="Küldés" id="submitButton">
+    </form>
+
+    <div id="errorMessages"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
