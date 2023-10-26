@@ -1,9 +1,11 @@
-// Selecting form and input elements
+
+
+// Elemek kijelolese 
 const form = document.querySelector("form");
 const passwordInput = document.getElementById("password");
 const passToggleBtn = document.getElementById("pass-toggle-btn");
 
-// Function to display error messages
+//  error messages
 const showError = (field, errorText) => {
     field.classList.add("error");
     const errorElement = document.createElement("small");
@@ -12,7 +14,7 @@ const showError = (field, errorText) => {
     field.closest(".form-group").appendChild(errorElement);
 }
 
-// Function to handle form submission
+// handle form submission
 const handleFormData = (e) => {
     e.preventDefault();
 

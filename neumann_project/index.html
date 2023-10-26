@@ -3,39 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>János Neumann - Scientist</title>
+    <title>János Neumann - The man from the Future</title>
     <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="js/script.js">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="shortcut icon" href="sources/favicon/favicon-32x32.png" type="image/x-icon"
+
+
 </head>
+
+
 <body>
-    <header>
-        <h1>János Neumann</h1>
-        <p>Scientist & Mathematician</p>
-    </header>
+    
 
-    <section id="about">
-        <div class="content">
-            <h2>About János Neumann</h2>
-            <p>János Neumann was a brilliant mathematician and computer scientist known for his significant contributions to the field of mathematics and computer science.</p>
+    <!-- Feladakiírás alapján formázás a html-ben -->
+    <style>
+    body{
+        margin: 0px;
+    }
+    main{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    h1{
+        text-align: center;
+    }
+    .navbar{
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+
+    }
+    .navbar ul{
+        list-style-type: none;
+        background-color: hsl(0, 0%, 25%);
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+    }
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        text-align: center;
+    }
+
+    #signup{
+        position: relative;
+        justify-content: right;
+        text-align: right;
+        padding-left: 90%;
+
+    }
+    .navbar a:hover{
+        background-color: hsl(0, 0%, 10%);
+    }
+    .navbar li{
+        float: left;
+    }
+
+    ol{
+        color: azure;
+    }
+
+    a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+    </style>
+
+    <div>
+        
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <div id="signup" ><li><a href="signup.html">Sign Up</a></li> </div>
+                
+            </ul>
+        </nav>
+    
+       
+        
+    </div>
+
+
+    <div class="container">
+        <div class="slides slide1">
+            <img src="sources/img/neumann_janos_01.jpg" alt="">
+            <h1>Neumann - The man from the future </h1>
         </div>
-    </section>
 
-    <section id="timeline">
-        <h2>Timeline</h2>
-        <ul class="timeline">
-            <li class="event">
-                <div class="date">1903</div>
-                <div class="description">János Neumann was born in Budapest, Hungary.</div>
-            </li>
-            <li class="event">
-                <div class="date">1930</div>
-                <div class="description">He received his Ph.D. in mathematics from the University of Budapest.</div>
-            </li>
-            <!-- Add more timeline events as needed -->
-        </ul>
-    </section>
+       
 
-    <!-- Add more sections and content as needed -->
 
-    <script src="script.js"></script>
+    </div>
+
+
+    <div class="timeline-section">
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1900</div>
+                <div class="timeline-content">
+                    <h3>Családi gyökerek, kezdetek</h3>
+                    <p>1903. december 28-án született Neumann Miksa és Kann Margit első gyermekeként, zsidó származású családba Budapesten, az 5. kerület Báthory u. 26. számú házban. Jánosnak később két öccse is született: Mihály (1907) és Miklós (1911). Az édesapja Pécsről származott, és Budapesten ügyvédként dolgozott, aztán a Magyar Jelzálog- és Hitelbankhoz került először fő jogtanácsosi pozícióba, majd pedig a bank igazgatói székébe. János édesanyja, Margit a háztartást vezette és fiai nevelésével foglalatoskodott. </p>
+                    <img  id="n1"   src="sources/img/neumann_janos_04.jpg" alt="">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1920</div>
+                <div class="timeline-content">
+                    <h3>Iskolái</h3>
+                    <p>Neumann már tízéves kora előtt csodagyereknek számított, majd 1913-ban szülei beíratták a híres fasori evangélikus főgimnáziumba (Ágostai Hitvallású Evangélikus Főgimnázium). Ebbe az iskolába járt a Nobel-díjas Wigner Jenő (1963, fizikai) és Harsányi János (1994, közgazdasági) is, ahol mindhárman Rátz László tanár úrtól tanulták a matematikát.</p>
+                    <img  id = "n1" src="sources/img/neumann_janos_02.jpg" alt="">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1930</div>
+                <div class="timeline-content">
+                    <h3>Amerika</h3>
+                    <div class="lists">
+                        <ul>
+                            <li>1930</li>
+                            <li>1933-1950</li>
+                            <li> 1951-1953</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <img id = "n1" src="sources/img/neumann_janos_03.jpg" alt="">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1940</div>
+                <div class="timeline-content">
+                    <h3>Kvantummechanika</h3>
+
+                    <ol>
+                        <li>1930</li>
+                        <li>1933-1950</li>
+                        <li> 1951-1953</li>
+                        
+                    </ol>
+
+                    <span>
+                        <p>A matematikusok 1900-as nemzetközi kongresszusán (International Congress of Mathematicians) állt elő a huszonhárom problémából álló híres listájával David Hilbert. Ezek komoly hatással voltak a 20. század matematikájának fejlődésére.  </p>
+
+                    </span>                 
+                    <img id = "n1" src="sources/img/neumann_janos_04.jpg" alt="">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1960</div>
+                <div class="timeline-content">
+                    <h3>Lorem ipsum</h3>
+                    <img id = "n1" src="sources/img/neumann_the man from the future.jpg" alt="">
+                    <span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+                    </span>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022</div>
+                <div class="timeline-content">
+                    <h3></h3>
+                    <span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <a id="alink" href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+                    </span>
+                </div>
+            </div>
+         
+         
+        </div>
+    </div>
+
+ 
+ 
+
+
 </body>
 </html>

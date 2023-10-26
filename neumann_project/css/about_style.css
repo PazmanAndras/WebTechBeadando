@@ -1,0 +1,79 @@
+body{
+    margin: 0px;
+
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h1{
+    text-align: center;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+#signup{
+    position: relative;
+    justify-content: right;
+    text-align: right;
+    padding-left: 90%;
+
+}
+.navbar a:hover{
+    background-color: hsl(0, 0%, 10%);
+}
+.navbar li{
+    float: left;
+}
+
+.info{
+    width: 70%;
+    height: 80%;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-style: dashed;
+    border-color: aliceblue;
+    text-align: center;
+    border-radius: 30%;
+
+}
+
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+

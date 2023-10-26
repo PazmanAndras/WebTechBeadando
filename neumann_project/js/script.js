@@ -1,7 +1,77 @@
-// Example JavaScript code
-// You can add more functionality as needed
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Add your JavaScript code here
-    console.log("Website is loaded!");
+
+// Elemek kijelolese jquerivel és id alapján
+const form = document.querySelector("form");
+const passwordInput = document.getElementById("password");
+const passToggleBtn = document.getElementById("pass-toggle-btn");
+
+//  errors
+const showError = (field, errorText) => {
+    field.classList.add("error");
+    const errorElement = document.createElement("small");
+    errorElement.classList.add("error-text");
+    errorElement.innerText = errorText;
+    field.closest(".form-group").appendChild(errorElement);
+}
+
+
+const handleFormData = (e) => {
+    e.preventDefault();
+
+    // Bemeneti elemek lekérése
+    const fullnameInput = document.getElementById("fullname");
+    const emailInput = document.getElementById("email");
+    const dateInput = document.getElementById("date");
+    const genderInput = document.getElementById("gender");
+
+    // elemek  trim whitespace letültetée
+    const fullname = fullnameInput.value.trim();
+    const email = emailInput.value.trim();
+    const password = passwordInput.value.trim();
+    const date = dateInput.value;
+    const gender = genderInput.value;
+
+    // REGEX 
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    var szamRegex = /[1-9]/
+
+   
+    document.querySelectorAll(".form-group .error").forEach(field => field.classList.remove("error"));
+    document.querySelectorAll(".error-text").forEach(errorText => errorText.remove());
+
+    // Validácio check
+    if (fullname === "") {
+        showError(fullnameInput, "Enter your full name");
+    }
+    if (fullname === "") {
+        showError(fullnameInput, "Enter your full name");
+    }
+    if (!emailPattern.test(email)) {
+        showError(emailInput, "Enter a valid email address");
+    }
+    if (password === "") {
+        showError(passwordInput, "Enter your password");
+    }
+    if (date === "") {
+        showError(dateInput, "Select your date of birth");
+    }
+    if (gender === "") {
+        showError(genderInput, "Select your gender");
+    }
+
+    
+    const errorInputs = document.querySelectorAll(".form-group .error");
+    if (errorInputs.length > 0) return;
+
+
+    form.submit();
+}
+
+
+passToggleBtn.addEventListener('click', () => {
+    passToggleBtn.className = passwordInput.type === "password" ? "fa-solid fa-eye-slash" : "fa-solid fa-eye";
+    passwordInput.type = passwordInput.type === "password" ? "text" : "password";
 });
+
+
+form.addEventListener("submit", handleFormData);
