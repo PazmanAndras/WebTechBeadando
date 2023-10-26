@@ -21,7 +21,7 @@ HTML:
 CSS:
 - style attribútumban néhány elem formázása
 - azonosító alapján formázást
-- osztály alapján formázást
+-
 - táblázat formázása
 - menü kialakítása
 - háttérszín
